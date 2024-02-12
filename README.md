@@ -1,3 +1,5 @@
 # Lab5
-Name: Daad Haymour UCID: 30173064
-Name: Xicheng(Justin) Wang UCID: 30191121
+|    Name    |    UCID     |
+|------------| ------------|
+|Daad Haymour|   30173064  |
+| Justin Wang|   30191121  |
