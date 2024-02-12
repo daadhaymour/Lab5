@@ -206,22 +206,39 @@ Description : DOM Elements.
 		<script>
 			document.addEventListener('DOMContentLoaded', function afterRender() {
 				// Task 1: Set the text content of all elements with the class 'companyName' and remove their border
-
-
-				// Task 2: Change the background color of the navigation bar
+				
+				/*var elementByClass = document.getElementByClassName('companyName')
+				if (elementByClass) {
+					elemntByClass.textContent()
+					
+				}
+				document.getElementByClassName('companyName').removeattribute('border')*/
 				
 
-				// Task 3: Hide the section titled 'What is full-stack?'
+				// Task 2: Change the background color of the navigation bar
+				var navBar = document.querySelector('nav').style.backgroundColor= "green";
+				// navBar.getAttribute('background-color'), navBar.setAttribute('background-color', 'green');
 
+				// Task 3: Hide the section titled 'What is full-stack?'
+	
+				const arr = Array.from( document.querySelectorAll('h2')
+					).find(h2 => h2.textContent === "What is full-stack?")
+				
+				if (arr){
+
+					arr.parentElement.style.display = "none";
+				}
+				
 
 				// Task 4: Create a new <p> element and append it to the 'About Us' section
-
+				
+				
 
 				// Task 5: Add placeholders to input elements based on their corresponding label IDs
 
 
 				// Task 6: Set the src attribute of the image
-
+				const src_element = 
 
 				// Task 7: Add a new item in the navigation menu
 
