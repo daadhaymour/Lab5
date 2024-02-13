@@ -228,12 +228,13 @@ Description : DOM Elements.
 				
 
 				// Task 4: Create a new <p> element and append it to the 'About Us' section
-				const aboutSection = document.querySelector('section h2:first-of-type'); 
+				const aboutSection = document.querySelector('section h2:first-of-type').parentNode; 
    				const newParagraph = document.createElement('p'); 
 				
-    			//newParagraph.textContent = 'We are a leading provider of innovative solutions for businesses worldwide.'; 
-				//newParagraph.style.fontSize = '16px';
-				//newParagraph.style.fontWeight = 'normal';
+    			newParagraph.textContent = 'This is a new paragraph'; 
+				newParagraph.style.fontSize = '16px';
+				newParagraph.style.fontWeight = 'normal';
+				newParagraph.style.color = 'red';
     			aboutSection.appendChild(newParagraph);
 				
 
