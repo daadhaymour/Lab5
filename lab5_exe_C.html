@@ -239,11 +239,29 @@ Description : DOM Elements.
 				
 
 				// Task 5: Add placeholders to input elements based on their corresponding label IDs
-					
+				// const input_value = document.querySelector('input');
+				const inputs = document.querySelectorAll('input');
+				inputs.forEach(input => {
+					if (input.id == 'name') {
+						input.placeholder = 'Name';
+					}
+					else if (input.id == 'email'){
+						input.placeholder = 'Email';
+					}
+				});
+				const input_text = document.querySelectorAll('textarea');
+				input_text.forEach(input => {
+					// const label = document.querySelector(`label[for="${input.id}"]`);
+					if (input.id == 'message') {
+						input.placeholder = 'Message';
+					}
+				});
+
 
 				// Task 6: Set the src attribute of the image
 
-				//const src_element = document.
+				const src_element = document.querySelector('img');
+				src_element.getAttribute('src'), src_element.setAttribute('src', './images/example.svg');
 
 				// Task 7: Add a new item in the navigation menu
 				const navigationMenu = document.querySelector('nav ul');
@@ -261,9 +279,21 @@ Description : DOM Elements.
         		submitButton.disabled = true; 
 			});
 				// Task 9: Change the text color of each item in the 'Related Links' to green
-
+				const links = document.querySelectorAll('li');
+				links.forEach(link => {
+					if (link.firstElementChild.textContent == 'W3School'){
+						link.firstElementChild.style.color = "green";
+					}
+					else if (link.firstElementChild.textContent == 'AWS'){
+						link.firstElementChild.style.color = "green";
+					}
+				});
 
 				// Task 10: Add a red solid border to the footer
+				const footer = document.querySelectorAll('footer')
+				footer.forEach(footer => {
+					footer.style.border = '2px solid red';
+				})
 			});
 		</script>
 	</body>
